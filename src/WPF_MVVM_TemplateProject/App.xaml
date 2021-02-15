@@ -1,0 +1,19 @@
+﻿<Application x:Class="WPF_MVVM_TemplateProject.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WPF_MVVM_TemplateProject"
+             xmlns:vm="clr-namespace:WPF_MVVM_TemplateProject.ViewModels"
+             xmlns:uc="clr-namespace:WPF_MVVM_TemplateProject.UserControls"
+             Startup="OnStartup">
+    <Application.Resources>
+
+        <DataTemplate DataType="{x:Type vm:FirstChildViewModel}">
+            <uc:FirstChildUserControl/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vm:SecondChildViewModel}">
+            <uc:SecondChildUserControl/>
+        </DataTemplate>
+        
+    </Application.Resources>
+</Application>
